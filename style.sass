@@ -1,0 +1,433 @@
+---
+---
+@import "base"
+
+*, *::before, *::after
+	box-sizing: border-box
+
+html, body, #wrapper
+	margin: 0
+	min-height: 100%
+	outline: none
+	padding: 0
+	width: 100%
+
+html
+	scroll-behavior: smooth
+
+body
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	background: $off-brand
+	color: #000
+	font-family: $sans-serif
+	font-size: 16px
+	overflow-y: auto
+	transition: $transition-val
+
+::selection, ::-moz-selection
+	background: $highlight
+
+::-webkit-scrollbar
+	width: 10px
+
+::-webkit-scrollbar-track
+	background: $off-dark
+
+::-webkit-scrollbar-thumb
+	background: $brand
+	box-shadow: 0 -2px 5px 5px hsla(199, 100%, 24%, .25)
+	position: absolute
+
+::-webkit-scrollbar-thumb:hover
+	background: $highlight
+
+a, a:link, a:hover, a:focus
+	border-bottom: 2px solid transparent
+	transition: $transition-val
+
+a.lite
+	background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), $highlight calc(50% - 8px), $highlight 100%)
+	background-position: 0 0
+	background-size: 100% 250%
+	color: inherit
+	padding: 0 5px
+	transition: background-position 120ms ease-in-out, padding 120ms ease-in-out
+	&:hover
+		background-image: linear-gradient( transparent 0%, transparent calc(50% - 8px), $brand calc(50% - 8px), $brand 100%)
+		background-position: 0 100%
+		color: $off-dark
+		padding: 2px 5px 4px
+		text-decoration: none
+
+h1, h2, h3
+	font-family: $serif
+	letter-spacing: 2px
+
+b, strong
+	font-weight: 700
+
+.sans-serif
+	font-family: $sans-serif !important
+
+.btn, .btn:hover, .btn:focus
+	background: $brand
+	border-radius: 0
+	color: #FFF
+	font-size: 1.1rem
+	font-weight: 700
+	letter-spacing: 1px
+	margin: 1rem 0
+	outline: none
+	padding: 1rem 0
+	text-transform: uppercase
+	width: 100%
+	@media( #{$bp-md})
+		padding: 1rem 2.5rem
+		width: auto
+
+.btn:hover
+	background: $brand-dark
+
+.btn-primary
+	border: 2px solid $brand !important
+	&:hover
+		border: 2px solid $brand-dark !important
+
+.btn-secondary, .btn-secondary:hover
+	border: 2px solid #FFF !important
+
+.btn-white-bg
+	background: none
+	border: 2px solid $brand !important
+	color: $brand
+	&:hover
+		border: 2px solid $off-brand !important
+		color: #FFF
+
+.brand
+	color: $brand !important
+
+@media( #{$bp-md})
+	.brand-bl::before
+		background: $brand
+		content: " "
+		display: block
+		height: 4px
+		margin: 11px 0 0 -95px
+		position: absolute
+		width: 75px
+
+.section
+	padding-bottom: 5rem
+	padding-top: 10rem
+
+// Custom Navbar
+.navbar
+	background: none
+	text-align: center
+	transition: $transition-val
+	.navbar-toggler
+		border: none
+		outline: none
+		padding: 2rem
+		@media( #{$bp-md})
+			transform: scale(1.5)
+		.navbar-toggler-icon
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(4, 80%, 100%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+	&.nav-scroll-in
+		background: $off-dark
+
+.nav-link
+	color: $highlight !important
+	font-family: $serif
+	font-size: 1.75rem
+	letter-spacing: 2px
+	margin: 0 2rem
+	padding: 1rem
+	text-align: right
+	transition: $transition-val
+	&:hover
+		color: #FFF !important
+	@media( #{$bp-md})
+		font-size: 4rem
+	@media( #{$bp-lg})
+		font-size: 1.5rem
+		margin: 0 1.2rem 20px
+		padding: 1.5rem 0 !important
+		text-align: center
+		text-transform: uppercase
+		&:hover
+			margin-bottom: 0
+			margin-top: 20px
+			&::before
+				background: #FFF
+				content: " "
+				display: block
+				height: 50px
+				margin: -55px 0 5px 50%
+				width: 2px
+
+.nav-item
+	&.active, &.active:hover
+		.nav-link
+			color: #FFF !important
+			@media( #{$bp-lg})
+				margin-bottom: 0
+				margin-top: 20px
+				&::before
+					background: #FFF
+					content: " "
+					display: block
+					height: 50px
+					margin: -55px 0 5px 50%
+					width: 2px
+
+// reset
+.navbar-expand-xl
+	padding: 0
+	transition: $transition-val
+
+// 100% height mobile menu
+@media(max-width: 992px)
+	.navbar-collapse
+		&.collapse
+			height: 100vh
+			max-height: none
+			overflow-y: auto
+			transition: $transition-val
+		&.collapsing
+			height: 0 !important
+
+// Logo
+.monogram
+	border: 2px solid #FFF !important
+	color: #FFF
+	display: inline-block
+	margin-left: 1.5rem
+	padding: .5rem
+	transition: $transition-val
+	&:hover
+		background: $off-dark
+		border: 2px solid $off-brand !important
+		color: $off-brand
+		text-decoration: none
+
+// Main Page
+#Home
+	background: $off-brand
+	background: linear-gradient(160deg, $off-brand 0%, $brand 36%, $brand-dark 100%)
+	color: #FFF
+	padding-bottom: 11rem
+	padding-top: 11rem
+	h1
+		font-size: 5rem
+		line-height: 6rem
+		padding: 2rem 0
+	.img-dp
+		background: #FFF
+		border: 20px solid $off-brand
+		outline: 5px solid #FFF
+		width: 100%
+
+h2
+	font-size: 3rem
+
+.social-icons
+	margin: 3rem 0
+	a
+		background: #FFF
+		border-radius: 8px
+		border: 2px solid $brand
+		color: $brand !important
+		display: inline-block
+		font-size: 2rem
+		height: 75px
+		line-height: 75px
+		margin: 0 1rem 1rem 0
+		text-align: center
+		text-decoration: none
+		width: 75px
+		&:hover
+			background: $off-dark
+			border: 2px solid $off-dark
+			color: #FFF !important
+		@media( #{$bp-lg})
+			margin-left: 1.5rem
+	@media( #{$bp-lg})
+		margin: -37.5px 0 3rem
+
+#Social
+	background-color: #FFF
+	background-image: linear-gradient(45deg, #FFF 33.33%, $off-brand 33.33%, $off-brand 50%, #FFF 50%, #FFF 83.33%, $off-brand 83.33%, $off-brand 100%)
+	background-size: 8.5px 8.5px
+
+#Main, #About, #Work, #Blog, #YouTube, #Star
+	background: #FFF
+
+#About
+	.img-fluid
+		@media( #{$bp-sm})
+			margin: 2rem 0
+
+.nowrap
+	@media( #{$bp-md})
+		white-space: nowrap
+
+.cards-group
+	display: grid
+	grid-column-gap: 0
+	grid-row-gap: 2rem
+	grid-template-columns: 100%
+	list-style: none
+	padding: 0
+	@media( #{$bp-md})
+		grid-column-gap: 1rem
+		grid-row-gap: 2rem
+		grid-template-columns: 50% 50%
+	li
+		background: #FFF
+		border: 4px solid $highlight
+		box-shadow: 0 10px 0 0 $highlight
+		display: block
+		float: left
+		padding: 1.5rem
+		transition: $transition-val
+		width: 100%
+		img
+			display: block
+			margin: 1.5rem 0
+			width: 100%
+			&.logo
+				margin: 1.5rem 22.5%
+				width: 55%
+		h4
+			color: $off-dark
+			text-align: center
+		h6
+			margin-bottom: 1.5rem
+			text-align: center
+			&::before
+				color: hsl(0,0%,50%)
+				content: "FOR: "
+				font-size: 1rem
+		&:hover
+			border: 4px solid $brand
+			box-shadow: 0 10px 0 0 $brand
+			a
+				color: $brand
+		a
+			color: $off-dark
+			display: inline-block
+			float: left
+			margin-right: 1.5rem
+			text-align: center
+			@media( #{$bp-sm})
+				margin: 1rem 0 0
+			&:hover
+				color: $off-dark
+				margin-left: .5rem
+				margin-right: 1rem
+				text-decoration: none
+
+#Work
+	.card-list
+		min-height: 200px
+
+ul.blog-list
+	column-gap: 40px
+	display: grid
+	font-family: var(--sans-serif)
+	font-size: 14px
+	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr))
+	list-style: none
+	margin: 3rem 0 0
+	padding: 0
+	row-gap: 40px
+	&.for-videos
+		li
+			background: #000
+		a
+			color: #eee
+	& > li
+		border-radius: 6px
+		border: 1px solid #eee
+		box-shadow: 0 1.4px 3.3px rgba(0, 0, 0, 0.031), 0 3.5px 8.3px rgba(0, 0, 0, 0.044), 0 7.1px 17px rgba(0, 0, 0, 0.056), 0 14.6px 35px rgba(0, 0, 0, 0.069), 0 40px 96px rgba(0, 0, 0, 0.1)
+		transition: $transition-val
+		&:hover
+			box-shadow: 0 3.2px 3.3px rgba(0, 0, 0, 0.031), 0 8.1px 8.3px rgba(0, 0, 0, 0.044), 0 16.5px 17px rgba(0, 0, 0, 0.056), 0 33.9px 35px rgba(0, 0, 0, 0.069), 0 93px 96px rgba(0, 0, 0, 0.1)
+			margin: -5px 0 5px
+	a
+		border-radius: 6px
+		overflow: hidden
+		color: #000
+		display: block
+		height: 100%
+		img
+			height: 200px
+			object-fit: cover
+			width: 100%
+		&:hover
+			text-decoration: none
+
+.blog-content
+	padding: 20px 30px
+	&.no-image
+		padding: 170px 20px 30px
+	h4.title
+		font-size: 1.5rem
+	ul
+		color: #999
+		display: flex
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			margin-right: 10px
+
+#End-Game
+	background: $off-dark
+	color: #FFF
+	padding-bottom: 6rem
+	padding-top: 6rem
+	.monogram
+		border: 5px solid #FFF !important
+		font-size: 3rem
+		margin: 0 0 2rem
+		padding: 1rem 1.5rem
+		@media( #{$bp-md})
+			margin: 0
+		&:hover
+			border: 5px solid $brand !important
+			color: $brand
+			&::before
+				content: "⬆"
+				margin: -80px 0 0 20px
+				position: absolute
+	@media( #{$bp-sm})
+		p.lead
+			margin: 2rem 0
+
+	.footer-icon-links
+		margin: 2rem 0
+		@media( #{$bp-md})
+			margin: 0
+		a
+			color: #FFF
+			display: inline-block
+			font-size: 2rem
+			margin: 0 1.5rem 1rem 0
+			@media( #{$bp-md})
+				font-size: 1.5rem
+			&:hover
+				color: $brand
+				text-decoration: none
+	.ajit
+		border-bottom: 3px solid #FFF
+		color: #FFF
+		margin-bottom: 3px
+		padding-bottom: 3px
+		text-decoration: none
+		&:hover
+			margin-bottom: 0
+			padding-bottom: 6px
