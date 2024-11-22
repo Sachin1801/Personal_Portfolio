@@ -287,55 +287,213 @@ layout: default
 		</div>
 	</div>
 </div>
-<div
-	class="container-fluid section"
-	id="YouTube">
-	<div class="row">
-		<div
-			class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 brand-bl"
-			data-aos="fade-right">
-			<h3 class="brand">YouTube?</h3>
-			<h2>I make decent tutorials too</h2>
-			<p class="lead">
-				I've started uploading a few videos to start with.
-				All feedback is welcome!
-			</p>
-			<a
-				class="btn btn-primary"
-				href="/videos">
-				View all
-				<i class="fa fa-arrow-right"></i>
-			</a>
-			<a
-				class="btn btn-primary"
-				href="{{ site.social.youtube }}"
-				rel="noopener noreferrer"
-				target="_blank">
-				<i class="fa fa-youtube"></i>
-				YouTube
-			</a>
-		</div>
-		<div
-			class="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2"
-			data-aos-delay="450"
-			data-aos="fade-up">
-			<ul class="blog-list for-videos">
-				{% for video in site.data.videos limit:3 %}<li>
-					<a
-						href="{{ video.url }}"
-						rel="noopener noreferrer"
-						target="_blank"
-						title="{{ video.title }}">
-						{% if video.img_url %}<img
-							alt="{{ video.img_alt | default: video.title }}"
-							src="{{ video.img_url }}">{% endif %}
-						<div class="blog-content{% unless video.img_url %} no-image{% endunless %}">
-							<h4 class="title">{{ video.title }}</h4>
-						</div>
-					</a>
-				</li>{% endfor %}
-			</ul>
-		</div>
-	</div>
+
+
+<!-- Programming Languages -->
+<div class="skills-category">
+  <h3 class="skills-heading">Languages</h3>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="/assets/skills/python.svg" alt="Python">
+      <span>Python</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/cpp.svg" alt="C++">
+      <span>C++</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/java.svg" alt="Java">
+      <span>Java</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/js.svg" alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/sql.svg" alt="SQL">
+      <span>SQL</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/matlab.svg" alt="MATLAB">
+      <span>MATLAB</span>
+    </div>
+  </div>
 </div>
 
+<!-- Frameworks -->
+<div class="skills-category">
+  <h3 class="skills-heading">Frameworks & Libraries</h3>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="/assets/skills/tensorflow.svg" alt="TensorFlow">
+      <span>TensorFlow</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/scikit.svg" alt="scikit-learn">
+      <span>scikit-learn</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/pandas.svg" alt="Pandas">
+      <span>Pandas</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/numpy.svg" alt="NumPy">
+      <span>NumPy</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/django.svg" alt="Django">
+      <span>Django</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/react.svg" alt="ReactJS">
+      <span>ReactJS</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/nodejs.svg" alt="NodeJS">
+      <span>NodeJS</span>
+    </div>
+  </div>
+</div>
+
+<!-- Tools -->
+<div class="skills-category">
+  <h3 class="skills-heading">Developer Tools</h3>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="/assets/skills/vscode.svg" alt="VS Code">
+      <span>VS Code</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/git.svg" alt="Git">
+      <span>Git</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/kubernetes.svg" alt="Kubernetes">
+      <span>Kubernetes</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/gcp.svg" alt="Google Cloud">
+      <span>GCP</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/azure.svg" alt="Azure">
+      <span>Azure</span>
+    </div>
+  </div>
+</div>
+
+<!-- Databases -->
+<div class="skills-category">
+  <h3 class="skills-heading">Databases</h3>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="/assets/skills/mongodb.svg" alt="MongoDB">
+      <span>MongoDB</span>
+    </div>
+    <div class="skill-item">
+      <img src="/assets/skills/mysql.svg" alt="MySQL">
+      <span>MySQL</span>
+    </div>
+  </div>
+</div>
+
+<!-- Achievements Section -->
+<div class="skills-category">
+	<h3 class="skills-heading">Achievements</h3>
+	<div class="achievements-grid">
+	  <div class="achievement-item">
+		<span class="achievement-title">Research Paper Published</span>
+		<span class="achievement-details">ACM Conference • March 2024</span>
+	  </div>
+	  
+	  <div class="achievement-item">
+		<span class="achievement-title">Winner - Code4Cause Hackathon</span>
+		<span class="achievement-details">Pan Delhi Competition • 600+ Participants</span>
+	  </div>
+  
+	  <div class="achievement-item">
+		<span class="achievement-title">Global Rank 856</span>
+		<span class="achievement-details">Google CodeJam Farewell</span>
+	  </div>
+  
+	  <div class="achievement-item">
+		<span class="achievement-title">University Rank 1 - Bachelors</span>
+		<span class="achievement-details">Mathematics Excellence</span>
+	  </div>
+
+	  <div class="achievement-item">
+		<span class="achievement-title">500+ DSA Problems Solved</span>
+		<span class="achievement-details">Across all different Coding Platforms</span>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Certifications Section -->
+  <div class="skills-category">
+	<h3 class="skills-heading">Certifications (*click on me*)</h3>
+	<div class="certifications-grid">
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/12c7yGAEvL3h60BlOLRveFwjmsvepKfsv" target="_blank">
+		  <span class="cert-title">Web Development Internship</span>
+		  <span class="cert-issuer">Coding Blocks</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/17QOD--tzY3THxVlB46omCpMg2nnitsRf" target="_blank">
+		  <span class="cert-title">AI Skills Certificate</span>
+		  <span class="cert-issuer">Microsoft Learn</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1g6MMp9VuoP5SvrokEz5zOLqnmHiEj1iU" target="_blank">
+		  <span class="cert-title">Machine Learning</span>
+		  <span class="cert-issuer">Stanford Online</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1sLC0lBHAwseLnPDRD5YkfNZABRToiVCH" target="_blank">
+		  <span class="cert-title">Virtual Software Engineering Program</span>
+		  <span class="cert-issuer">JP Morgan Chase</span>
+		</a>
+	  </div>
+
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1cskGiKSfFtej71HxLA1DWM9gHYxoOoI-" target="_blank">
+		  <span class="cert-title">Global Rank 856</span>
+		  <span class="cert-issuer">Google CodeJam</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1M1Jk047ujrrm6jTPyf6eJSD8f8_XWNET" target="_blank">
+		  <span class="cert-title">Virtual Engineering Program</span>
+		  <span class="cert-issuer">Goldman Sachs</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1LpWZI9389nICEsC10HANH1eUoS2-MA1d" target="_blank">
+		  <span class="cert-title">Machine Learning Certificate</span>
+		  <span class="cert-issuer">Foxmula</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/18Hzbj26C80yjRum9pozVr-zEIv46QPYd" target="_blank">
+		  <span class="cert-title">Microprocessors & Microcontrollers</span>
+		  <span class="cert-issuer">8085/8086/8051 Certification</span>
+		</a>
+	  </div>
+  
+	  <div class="certification-item">
+		<a href="https://drive.google.com/drive/u/1/folders/1UJZMktmgLrUtRRP_h58wLGJCHF_JbbtQ" target="_blank">
+		  <span class="cert-title">C++ Excellence</span>
+		  <span class="cert-issuer">Certificate of Excellence</span>
+		</a>
+	  </div>
+	</div>
+  </div>

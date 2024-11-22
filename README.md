@@ -42,7 +42,7 @@ This is the codebase for my personal portfolio!
 
 ## Meta
 
-- Designed by [Ajit Panigrahi](https://ajitpanigrahi.com).
+- Designed by [Sachin Adlakha](https://ajitpanigrahi.com).
 - Uses [Bootstrap 4.5.2](https://getbootstrap.com).
 - Icons by [Font Awesome](https://fontawesome.com).
 - Animations with [AOS](https://michalsnik.github.io/aos/).

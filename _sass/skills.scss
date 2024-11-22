@@ -1,0 +1,150 @@
+// Skills section styles matching site theme
+// Section headings styling
+.skills-heading {
+    text-align: center;
+    color: #77cbd4;
+    font-size: 1.8rem;          // Increased from 1.5rem
+    text-transform: uppercase;
+    letter-spacing: 3px;        // Increased from 2px
+    margin: 4rem 0 3rem;        // Increased vertical margins
+    font-weight: 600;           // Made slightly bolder
+    padding: 1.5rem 0;          // Added padding for more height
+    position: relative;
+    
+    // Optional: Add a subtle underline effect
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: #77cbd4;
+      border-radius: 2px;
+    }
+  }
+  
+  // Rest of the styles remain the same
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2.5rem;
+    margin: 2rem 0;
+    justify-items: center;
+  }
+  
+  .skill-item {
+    text-align: center;
+    width: 100%;
+    max-width: 120px;
+    
+    img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  .skills-category {
+    margin-bottom: 4rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .achievement-item,
+  .certification-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center; // Center align all text
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px; // Ensure consistent height
+    
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+  
+  .achievement-item {
+    .achievement-title {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .achievement-details {
+      display: block;
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  .certification-item {
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      
+      &:hover .cert-title {
+        color: #77cbd4;
+      }
+    }
+    
+    .cert-title {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      width: 100%;
+      transition: color 0.3s ease;
+    }
+    
+    .cert-issuer {
+      display: block;
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  // Grid layout
+  .achievements-grid,
+  .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+  }

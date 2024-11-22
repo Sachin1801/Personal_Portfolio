@@ -1,31 +1,61 @@
-- title: Mentorship Android App
-  made_for: Systers Organization
-  description: Mentorship System is an application that matches women in tech to mentor each other, on career development, through 1:1 relations during a certain period of time.
-  img_alt: Mentorship Android App
-  img_url: /assets/work/mentorship-android.png
-  source_url: https://github.com/systers/mentorship-android
+- title: Web-Based Trading Platform
+  made_for: Personal Project
+  description: >-
+    Developed a comprehensive trading platform integrating real-time market data via REST APIs with sub-100ms response time.
+    Built a system for market and limit orders reducing trade execution latency by 15%. Implemented a scanner to filter 1,000+
+    stocks based on technical indicators, enhancing filtering efficiency by 30%.
+  img_alt: Trading Platform Dashboard
+  img_url: /assets/work/trading-platform.png
+  source_url: https://github.com/Sachin1801/interactive-brokers-web-api-main
 
-- title: GDG Vizag DevFest 2019
-  made_for: GDG Vizag
-  description: The DevFest Mobile application is for all the GDG Devfests around the world. You can see the agenda in the app as well as the speakers and other updates regarding the devfest. Made with Flutter, entirely by myself.
-  img_alt: GDG Vizag DevFest 2019
-  img_url: /assets/work/gdgvizagdevfest.PNG
-  source_url: https://github.com/SAITARUN55/GDGVizagDevFestApp
+- title: Automated Oanda Trading Bot
+  made_for: Personal Project
+  description: >-
+    Engineered an automated trading system with integrated stop-loss and take-profit features, reducing potential losses by 20%.
+    Developed a backtesting engine using historical data, improving strategy performance by 15%. Implemented real-time price
+    fetching with 10% reduced API call latency.
+  img_alt: Oanda Trading Bot
+  img_url: /assets/work/trading-bot.png
+  source_url: https://github.com/Sachin1801/oanda-bot
 
-- title: SUSI.AI Android App
-  made_for: FOSSASIA
-  description: This app provides a conversational interface to provide intelligent answers using the loklak/AskSusi infrastructure. It offers login functionalities to connect to other services and store personal data. I contributed to a few translations in their open-source project.
-  img_alt: SUSI.AI Android App
-  img_url: /assets/work/susi.png
-  img_type_logo: true
-  source_url: https://github.com/fossasia/susi_android
-  demo_url: https://play.google.com/store/apps/details?id=ai.susi
+- title: Sign Language Detection System
+  made_for: Personal Project and Research Paper Publication in ACM Conference
+  description: >-
+    Created a deep learning model achieving 99% accuracy in detecting American Sign Language and basic gestures. Trained the
+    system to recognize over 200 sign language gestures, significantly improving communication capabilities for the hearing
+    impaired.
+  img_alt: Sign Language Detection
+  img_url: /assets/work/sign-language.png
+  source_url: https://github.com/Sachin1801/sign-language-detection
 
-- title: Travel Mate Android App
-  made_for: GirlScript Summer of Code 2019
-  description: It is an app for travellers, providing features like managing bookings, organizing trips for any destination and also provides relevant information about locations - weather, places to hang out &amp; the city's current trends – any problem a traveler might face during their journey.
-  img_alt: Travel Mate Android App
-  img_url: /assets/work/travelmate.png
-  img_type_logo: true
-  source_url: https://github.com/project-travel-mate/Travel-Mate
-  demo_url: https://play.google.com/store/apps/details?id=io.github.project_travel_mate
+- title: Pothole Detection System
+  made_for: Personal Project
+  description: >-
+    Implemented a real-time pothole detection system using YOLOv2 algorithm and RaspberryPI 4. Created startup scripts for
+    automated deployment and monitoring, enabling efficient road infrastructure assessment.
+  img_alt: Pothole Detection System
+  img_url: /assets/work/pothole.jpg
+  source_url: https://github.com/Sachin1801/pothole-detection
+
+- title: Interactive 3D Web Portfolio
+  made_for: Personal Project
+  description: >-
+    A game-like 3D portfolio experience built using Three.js and React.js, allowing visitors to walk around and interact with 
+    various elements in a custom-designed 3D environment. The project leverages React-Three-Fiber for seamless integration of 
+    Three.js with React, and features custom 3D models created in Blender. Currently a work in progress, focusing on optimizing 
+    performance and adding interactive elements.
+    Tech stack includes JavaScript (94%), CSS (3.1%), HTML (2.2%), and TypeScript (0.7%). 
+    The web application's performance is system-dependent due to its intensive 3D rendering requirements. [Work in Progress]
+  img_alt: 3D Portfolio Interface
+  img_url: /assets/work/3d-portfolio.png
+  source_url: https://github.com/Sachin1801/3d-portfolio
+  demo_url: https://sachin-adlakha-portfolio.web.app/
+
+- title: 3D Tic-Tac-Toe
+  made_for: Passion for Interactive Gaming and a Personal Project
+  description: A modern twist on the classic game featuring a 3D game board for an immersive gaming experience. Built with Next.js and styled with Tailwind CSS, the game offers real-time state management and responsive design for both desktop and mobile platforms. The project showcases seamless 3D rendering using Three.js while maintaining a sleek, user-friendly interface.
+  img_alt: 3D Tic-Tac-Toe Game
+  img_url: /assets/work/3d-tictactoe.png
+  source_url: https://github.com/Sachin1801/3-d-tik-tac-toe
+  demo_url: https://sachin-3-d-tik-tac-toe-1.vercel.app
+  
