@@ -1,7 +1,9 @@
 ---
 ---
+
 @import "base"
 @import "skills"
+@import "about"
 
 *, *::before, *::after
 	box-sizing: border-box
@@ -123,7 +125,6 @@ b, strong
 	padding-bottom: 5rem
 	padding-top: 10rem
 
-// Custom Navbar
 .navbar
 	background: none
 	text-align: center
@@ -184,12 +185,10 @@ b, strong
 					margin: -55px 0 5px 50%
 					width: 2px
 
-// reset
 .navbar-expand-xl
 	padding: 0
 	transition: $transition-val
 
-// 100% height mobile menu
 @media(max-width: 992px)
 	.navbar-collapse
 		&.collapse
@@ -200,7 +199,6 @@ b, strong
 		&.collapsing
 			height: 0 !important
 
-// Logo
 .monogram
 	border: 2px solid #FFF !important
 	color: #FFF
@@ -214,7 +212,6 @@ b, strong
 		color: $off-brand
 		text-decoration: none
 
-// Main Page
 #Home
 	background: $off-brand
 	background: linear-gradient(160deg, $off-brand 0%, $brand 36%, $brand-dark 100%)
@@ -233,6 +230,35 @@ b, strong
 
 h2
 	font-size: 3rem
+
+.intro-points
+	margin: 2rem 0
+	font-size: 1.2rem
+	line-height: 1.8
+	color: #fff
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+			position: relative
+			padding-left: 1.5rem
+			margin-bottom: 1.2rem
+			&:before
+				content: "•"
+				position: absolute
+				left: 0
+				color: #fff
+	.seeking-opportunities
+		margin-top: 2rem
+		.roles
+			padding-left: 1.5rem
+			margin-top: 0.5rem
+			li
+				font-size: 1.2rem
+				margin-bottom: 0.8rem
+				&:before
+					content: "-"
 
 .social-icons
 	margin: 3rem 0
@@ -275,102 +301,6 @@ h2
 	@media( #{$bp-md})
 		white-space: nowrap
 
-.cards-group
-	display: grid
-	grid-column-gap: 0
-	grid-row-gap: 2rem
-	grid-template-columns: 100%
-	list-style: none
-	padding: 0
-	@media( #{$bp-md})
-		grid-column-gap: 1rem
-		grid-row-gap: 2rem
-		grid-template-columns: 50% 50%
-	li
-		background: #FFF
-		border: 4px solid $highlight
-		box-shadow: 0 10px 0 0 $highlight
-		display: block
-		float: left
-		padding: 1.5rem
-		transition: $transition-val
-		width: 100%
-		img
-			display: block
-			margin: 1.5rem 0
-			width: 100%
-			&.logo
-				margin: 1.5rem 22.5%
-				width: 55%
-		h4
-			color: $off-dark
-			text-align: center
-		h6
-			margin-bottom: 1.5rem
-			text-align: center
-			&::before
-				color: hsl(0,0%,50%)
-				content: "FOR: "
-				font-size: 1rem
-		&:hover
-			border: 4px solid $brand
-			box-shadow: 0 10px 0 0 $brand
-			a
-				color: $brand
-		a
-			color: $off-dark
-			display: inline-block
-			float: left
-			margin-right: 1.5rem
-			text-align: center
-			@media( #{$bp-sm})
-				margin: 1rem 0 0
-			&:hover
-				color: $off-dark
-				margin-left: .5rem
-				margin-right: 1rem
-				text-decoration: none
-
-#Work
-	.card-list
-		min-height: 200px
-
-ul.blog-list
-	column-gap: 40px
-	display: grid
-	font-family: var(--sans-serif)
-	font-size: 14px
-	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr))
-	list-style: none
-	margin: 3rem 0 0
-	padding: 0
-	row-gap: 40px
-	&.for-videos
-		li
-			background: #000
-		a
-			color: #eee
-	& > li
-		border-radius: 6px
-		border: 1px solid #eee
-		box-shadow: 0 1.4px 3.3px rgba(0, 0, 0, 0.031), 0 3.5px 8.3px rgba(0, 0, 0, 0.044), 0 7.1px 17px rgba(0, 0, 0, 0.056), 0 14.6px 35px rgba(0, 0, 0, 0.069), 0 40px 96px rgba(0, 0, 0, 0.1)
-		transition: $transition-val
-		&:hover
-			box-shadow: 0 3.2px 3.3px rgba(0, 0, 0, 0.031), 0 8.1px 8.3px rgba(0, 0, 0, 0.044), 0 16.5px 17px rgba(0, 0, 0, 0.056), 0 33.9px 35px rgba(0, 0, 0, 0.069), 0 93px 96px rgba(0, 0, 0, 0.1)
-			margin: -5px 0 5px
-	a
-		border-radius: 6px
-		overflow: hidden
-		color: #000
-		display: block
-		height: 100%
-		img
-			height: 200px
-			object-fit: cover
-			width: 100%
-		&:hover
-			text-decoration: none
-
 .blog-content
 	padding: 20px 30px
 	&.no-image
@@ -408,7 +338,6 @@ ul.blog-list
 	@media( #{$bp-sm})
 		p.lead
 			margin: 2rem 0
-
 	.footer-icon-links
 		margin: 2rem 0
 		@media( #{$bp-md})
@@ -432,3 +361,109 @@ ul.blog-list
 		&:hover
 			margin-bottom: 0
 			padding-bottom: 6px
+
+ul.blog-list 
+	column-gap: 40px
+	display: grid
+	font-family: var(--sans-serif)
+	font-size: 14px
+	grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr))
+	list-style: none
+	margin: 3rem 0 0
+	padding: 0
+	row-gap: 40px
+	
+	& > li 
+		border-radius: 6px
+		border: 1px solid #eee
+		box-shadow: 0 1.4px 3.3px rgba(0, 0, 0, 0.031), 0 3.5px 8.3px rgba(0, 0, 0, 0.044), 0 7.1px 17px rgba(0, 0, 0, 0.056), 0 14.6px 35px rgba(0, 0, 0, 0.069), 0 40px 96px rgba(0, 0, 0, 0.1)
+		transition: $transition-val
+		overflow: hidden  // Add this
+		
+		&:hover
+			box-shadow: 0 3.2px 3.3px rgba(0, 0, 0, 0.031), 0 8.1px 8.3px rgba(0, 0, 0, 0.044), 0 16.5px 17px rgba(0, 0, 0, 0.056), 0 33.9px 35px rgba(0, 0, 0, 0.069), 0 93px 96px rgba(0, 0, 0, 0.1)
+			margin: -5px 0 5px
+	
+	a
+		border-radius: 6px
+		overflow: hidden
+		color: #000
+		display: block
+		height: 100%
+		
+		img
+			height: 200px         
+			width: 100%           
+			object-fit: cover     
+			max-height: 250px     
+			display: block        
+			margin: 0             
+
+.cards-group
+	display: grid
+	grid-gap: 2rem
+	list-style: none
+	padding: 0
+
+	li
+		background: #FFF
+		border-radius: 12px
+		border: 1px solid #eee
+		box-shadow: 0 2px 15px rgba(0,0,0,0.05)
+		overflow: hidden
+		transition: all 0.3s ease
+		margin-bottom: 2rem
+
+		&:hover
+			transform: translateY(-5px)
+			box-shadow: 0 8px 25px rgba(0,0,0,0.1)
+
+		img
+			width: 100%
+			height: 200px
+			object-fit: cover
+			border-top-left-radius: 12px
+			border-top-right-radius: 12px
+
+			&.logo
+				height: auto
+				max-height: 100px
+				padding: 1rem
+				object-fit: contain
+
+		.project-content
+			padding: 1.5rem
+
+			h4
+				font-size: 1.4rem
+				color: $brand
+				margin-bottom: 0.5rem
+				font-weight: 600
+
+			h6
+				color: #666
+				font-size: 0.9rem
+				margin-bottom: 1rem
+				font-weight: 500
+
+			p
+				color: #444
+				line-height: 1.6
+				font-size: 0.95rem
+				margin-bottom: 1.5rem
+
+			.project-links
+				display: flex
+				gap: 1.5rem
+				margin-top: 1rem
+
+				a
+					color: $brand
+					text-decoration: none
+					font-size: 0.9rem
+					font-weight: 500
+					transition: all 0.3s ease
+
+					&:hover
+						color: darken($brand, 10%)
+						transform: translateX(5px)

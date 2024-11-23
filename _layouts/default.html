@@ -97,7 +97,7 @@
 						<a class="nav-link" href="{% if page.url != '/' %}{{ site.url }}/{% endif %}#Blog">Blog</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{% if page.url != '/' %}{{ site.url }}/{% endif %}#YouTube">Skills&Achievements</a>
+						<a class="nav-link" href="{% if page.url != '/' %}{{ site.url }}/{% endif %}#Skills">Skills&Achievements</a>
 					</li>
 				</ul>
 			</div>
@@ -210,14 +210,14 @@
 								target="_blank">
 								<i class="fa fa-instagram"></i>
 							</a>
-							<a
+							{% comment %} <a
 								ata-aos-delay="350"
 								data-aos="fade"
 								href="{{ site.social.youtube }}"
 								rel="noopener noreferrer"
 								target="_blank">
 								<i class="fa fa-youtube"></i>
-							</a>
+							</a> {% endcomment %}
 						</div>
 					</div>
 					<div

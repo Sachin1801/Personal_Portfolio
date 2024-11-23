@@ -1,0 +1,113 @@
+// Education Section Styles
+.education-section {
+    .education-item {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(119, 203, 212, 0.05);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        h4 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .degree {
+            color: #77cbd4;
+            font-weight: 900;
+            margin-bottom: 0.3rem;
+        }
+
+        .duration {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .gpa {
+            color: #77cbd4;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+
+        .coursework {
+            margin-top: 1rem;
+
+            .coursework-title {
+                font-weight: 500;
+                color: #444;
+                margin-bottom: 0.5rem;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+
+                li {
+                    font-size: 0.9rem;
+                    color: #555;
+                    margin-bottom: 0.3rem;
+                    padding-left: 1rem;
+                    position: relative;
+
+                    &:before {
+                        content: "•";
+                        color: #77cbd4;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-link-section {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    
+    p {
+        font-size: 1.1rem;
+        color: #4a4a4a;
+        margin-bottom: 0;
+        
+        a.lite {
+            font-weight: 500;
+            position: relative;
+            color: #77cbd4;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0.2rem 0;
+            margin: 0 0.3rem;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #77cbd4;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease;
+            }
+            
+            &:hover {
+                color: darken(#77cbd4, 10%);
+                
+                &::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}

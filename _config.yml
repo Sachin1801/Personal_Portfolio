@@ -9,7 +9,7 @@ og:
   title: Sachin Adlakha's Portfolio
   image_height: 1440
   image_width: 1080
-  image_url: https://ksaitarun.com/assets/profile.jpg
+  image_url: /assets/images/profile.jpg  # Updated path
 
 cta:
   primary: Hire Me!
@@ -30,16 +30,16 @@ social:
   # youtube: https://www.youtube.com/c/SaiTarunKaniganti
 
 theme_color: "#77cbd4"
-baseurl: "" # repo name, leave blank for user/org pages.
-url: "https://ksaitarun.com" # Full URL, always.
+baseurl: ""  # leave empty for user sites, or use repo name if it's a project site
+url: "" 
 
 permalink: /:title
 
 defaults:
   - scope:
-      path: ""
+      path: "assets/images"
     values:
-      layout: default
+      image: true
 
 sass:
   style: :compressed
@@ -57,4 +57,10 @@ plugins:
 exclude:
   - LICENSE
   - README.md
-
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
