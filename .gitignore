@@ -10,6 +10,8 @@ _site/
 *.sass.map
 *.scss.map
 
+/venv
+
 ### macOS ###
 # General
 .DS_Store
