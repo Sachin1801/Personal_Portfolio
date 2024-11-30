@@ -9,7 +9,7 @@ og:
   title: Sachin Adlakha's Portfolio
   image_height: 1440
   image_width: 1080
-  image_url: ./assets/images/profile.jpg  # Updated path
+  image_url: https://github.com/Leo-Adlakha/Personal_Portfolio_Sachin/blob/deploy/assets/images/profile.jpg  # Updated path
 
 cta:
   primary: Hire Me!
