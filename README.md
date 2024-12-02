@@ -1,7 +1,7 @@
 # Personal Website & Portfolio
 
-[![Vercel Status](https://img.shields.io/github/deployments/yourusername/repo-name/Production?label=vercel&logo=vercel&logoColor=white)](https://sachin-portfolio-usxtme9qj-sachins-projects-a130ba69.vercel.app)
-[![GitHub Pages](https://img.shields.io/github/actions/workflow/status/yourusername/repo-name/pages.yml?label=github%20pages&logo=github)](https://sachin1801.github.io/Personal_Portfolio/)
+[![Vercel Status](https://img.shields.io/github/deployments/sachin1801/Personal_Portfolio/Production?label=vercel&logo=vercel&logoColor=white)](https://sachin-portfolio-usxtme9qj-sachins-projects-a130ba69.vercel.app)
+[![GitHub Pages](https://img.shields.io/github/actions/workflow/status/sachin1801/Personal_Portfolio/pages.yml?label=github%20pages&logo=github)](https://sachin1801.github.io/Personal_Portfolio/)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg "Built with love")](https://forthebadge.com)
 
