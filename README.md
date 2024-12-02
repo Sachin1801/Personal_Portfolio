@@ -1,12 +1,13 @@
 # Personal Website & Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6850ad60-9b1c-48d1-9a92-565f9aa78700/deploy-status)](https://app.netlify.com/sites/ksaitarun/deploys)
+[![Vercel Status](https://img.shields.io/github/deployments/yourusername/repo-name/Production?label=vercel&logo=vercel&logoColor=white)](https://sachin-portfolio-usxtme9qj-sachins-projects-a130ba69.vercel.app)
+[![GitHub Pages](https://img.shields.io/github/actions/workflow/status/yourusername/repo-name/pages.yml?label=github%20pages&logo=github)](https://sachin1801.github.io/Personal_Portfolio/)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg "Built with love")](https://forthebadge.com)
 
 This is the codebase for my personal portfolio!
 
-🚀 **Live:** https://ksaitarun.com
+🚀 **Live:** https://sachin1801.github.io/Personal_Portfolio/
 
 ## Meta
 
@@ -15,6 +16,6 @@ This is the codebase for my personal portfolio!
 - Icons by [Font Awesome](https://fontawesome.com).
 - Animations with [AOS](https://michalsnik.github.io/aos/).
 - Built with [Jekyll](https://jekyllrb.com) & [Sass](https://sass-lang.com/).
-- Hosted on  [Netlify](https://netlify.com)!
+- Hosted on [Vercel](https://sachin-portfolio-usxtme9qj-sachins-projects-a130ba69.vercel.app) and [GitHub Pages](https://sachin1801.github.io/Personal_Portfolio/)!
 
 
