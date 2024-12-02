@@ -5,7 +5,7 @@
     Built a system for market and limit orders reducing trade execution latency by 15%. Implemented a scanner to filter 1,000+
     stocks based on technical indicators, enhancing filtering efficiency by 30%.
   img_alt: Trading Platform Dashboard
-  img_url: /assets/work/trading-platform.png
+  img_url: ./assets/work/trading-platform.png
   source_url: https://github.com/Sachin1801/interactive-brokers-web-api-main
 
 - title: Automated Oanda Trading Bot
@@ -15,7 +15,7 @@
     Developed a backtesting engine using historical data, improving strategy performance by 15%. Implemented real-time price
     fetching with 10% reduced API call latency.
   img_alt: Oanda Trading Bot
-  img_url: /assets/work/trading-bot.png
+  img_url: ./assets/work/trading-bot.png
   source_url: https://github.com/Sachin1801/oanda-bot
 
 - title: Sign Language Detection System
@@ -25,7 +25,7 @@
     system to recognize over 200 sign language gestures, significantly improving communication capabilities for the hearing
     impaired.
   img_alt: Sign Language Detection
-  img_url: /assets/work/sign-language.png
+  img_url: ./assets/work/sign-language.png
   source_url: https://github.com/Sachin1801/sign-language-detection
 
 - title: Pothole Detection System
@@ -34,7 +34,7 @@
     Implemented a real-time pothole detection system using YOLOv2 algorithm and RaspberryPI 4. Created startup scripts for
     automated deployment and monitoring, enabling efficient road infrastructure assessment.
   img_alt: Pothole Detection System
-  img_url: /assets/work/pothole.jpg
+  img_url: ./assets/work/pothole.jpg
   source_url: https://github.com/Sachin1801/pothole-detection
 
 - title: Interactive 3D Web Portfolio
@@ -47,7 +47,7 @@
     Tech stack includes JavaScript (94%), CSS (3.1%), HTML (2.2%), and TypeScript (0.7%). 
     The web application's performance is system-dependent due to its intensive 3D rendering requirements. [Work in Progress]
   img_alt: 3D Portfolio Interface
-  img_url: /assets/work/3d-portfolio.png
+  img_url: ./assets/work/3d-portfolio.png
   source_url: https://github.com/Sachin1801/3d-portfolio
   demo_url: https://sachin-adlakha-portfolio.web.app/
 
@@ -55,7 +55,7 @@
   made_for: Passion for Interactive Gaming and a Personal Project
   description: A modern twist on the classic game featuring a 3D game board for an immersive gaming experience. Built with Next.js and styled with Tailwind CSS, the game offers real-time state management and responsive design for both desktop and mobile platforms. The project showcases seamless 3D rendering using Three.js while maintaining a sleek, user-friendly interface.
   img_alt: 3D Tic-Tac-Toe Game
-  img_url: /assets/work/3d-tictactoe.png
+  img_url: ./assets/work/3d-tictactoe.png
   source_url: https://github.com/Sachin1801/3-d-tik-tac-toe
   demo_url: https://sachin-3-d-tik-tac-toe-1.vercel.app
   
